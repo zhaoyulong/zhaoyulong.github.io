@@ -2,7 +2,7 @@
 <html lang="cn">
 <head>
         <meta charset="utf-8" />
-        <title>Zhaoyulong's Blog</title>
+        <title>hadoop包依赖问题</title>
         <link rel="stylesheet" href="/theme/css/main.css" />
 
         <!--[if IE]>
@@ -14,13 +14,18 @@
         <header id="banner" class="body">
                 <h1><a href="/">Zhaoyulong's Blog </a></h1>
                 <nav><ul>
-                    <li><a href="/category/wo-shi-ma-nong.html">我是码农</a></li>
+                    <li class="active"><a href="/category/wo-shi-ma-nong.html">我是码农</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/articles/2016/10/hadoop_dependency.html" rel="bookmark"
+           title="Permalink to hadoop包依赖问题">hadoop包依赖问题</a></h1>
+    </header>
 
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="/articles/2016/10/hadoop_dependency.html">hadoop包依赖问题</a></h1>
+    <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2016-10-01T13:54:00+08:00">
                 Published: 六 01 十月 2016
@@ -31,7 +36,7 @@
         </address>
 <p>In <a href="/category/wo-shi-ma-nong.html">我是码农</a>.</p>
 <p>tags: <a href="/tag/apache.html">apache</a> <a href="/tag/fen-bu-shi.html">分布式</a> <a href="/tag/bug_fix.html">bug_fix</a> </p>
-</footer><!-- /.post-info --><h2>问题</h2>
+</footer><!-- /.post-info -->      <h2>问题</h2>
 <h3>来源</h3>
 <p>天网项目中，会将所有的依赖包和相关数据文件一起打包，然后在集群上执行，但实际在集群上执行过程中，发现无法获取IP对应的地理位置信息。</p>
 <h3>分析</h3>
@@ -124,8 +129,11 @@ JobConf job = new JobConf(conf, GraphAbnormal.class);
 <li>http://blog.csdn.net/fover717/article/details/8079351</li>
 <li>https://hadoopi.wordpress.com/2013/06/05/hadoop-implementing-the-tool-interface-for-mapreduce-driver/</li>
 <li>http://stackoverflow.com/questions/28333080/getting-the-tool-interface-warning-even-though-it-is-implemented</li>
-</ol>                </article>
-            </aside><!-- /#featured -->
+</ol>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
         <section id="extras" class="body">
                 <div class="blogroll">
                         <h2>blogroll</h2>
